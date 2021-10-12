@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css'
+import { setCookie } from '../utils/cookie'
 
 const Login = () => {
   const [inputName, setInputName] = useState('')
@@ -8,6 +9,10 @@ const Login = () => {
   const handleInputId = (e) => {
     setInputName(e.target.value);
   };
+
+  const handleLogin = () => {
+    setCookie('name', inputName);
+  }
 
   return (
     <div className='wrapper'>
@@ -20,7 +25,7 @@ const Login = () => {
       </div>
       <div className='container'>
         <Link to={`/chat`}>
-          <button className='btn' type='button'>Login</button>
+          <button className='btn' type='button' onClick={handleLogin}>Login</button>
         </Link>
       </div>
     </div>
