@@ -5,7 +5,8 @@ import { Login, Chat } from './pages';
 import { getCookie } from './utils/cookie'
 
 const App = () => {
-  const isLoggedIn = getCookie('name');
+  const name = getCookie('name');
+  const isLoggedIn = (name === undefined ||  name === null ? false : true);
   return (
     <div className="App">
       <BrowserRouter>
