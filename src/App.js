@@ -1,14 +1,16 @@
 import "./App.css";
 import React from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { Login, Chat } from './pages';
+import { getCookie } from './utils/cookie'
 
 const App = () => {
+  const isLoggedIn = getCookie('name');
   return (
     <div className="App">
       <BrowserRouter>
+        {isLoggedIn ? <Redirect to='/chat' /> : <Redirect to='/login' />}
         <Switch>
-          <Route exact path="/" component={Login}/>
           <Route exact path="/login" component={Login}/>
           <Route exact path="/chat" component={Chat}/>
         </Switch>
