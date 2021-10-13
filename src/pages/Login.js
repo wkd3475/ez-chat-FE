@@ -15,18 +15,19 @@ const Login = () => {
   }
 
   return (
-    <div className='wrapper'>
-      <div className='container'>
-        <h2>set your name</h2>
-      </div>
-      
-      <div className='container'>
-        <input className='text-box' type='text' name='input_name' value={inputName} onChange={handleInputId} />
-      </div>
-      <div className='container'>
-        <Link to={`/chat`}>
-          <button className='btn' type='button' onClick={handleLogin}>Login</button>
-        </Link>
+    <div className='login-wrapper'>
+      <div className='login-body'>
+        <div className='login-top-container'>
+          <h2>set your name</h2>
+        </div>
+        <div className='login-mid-container'>
+          <input className='login-text-box' type='text' name='input_name' value={inputName} onChange={handleInputId} />
+        </div>
+        <div className='login-bottom-container'>
+          <Link to={`/chat`}>
+            <button className='login-btn' type='button' onClick={handleLogin}>Login</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

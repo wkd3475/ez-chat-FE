@@ -1,4 +1,4 @@
-.wrapper {
+.chat-wrapper {
     width: 100%;
     height: 100%;
     background: black;
@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-.body {
+.chat-body {
     flex: 1;
     margin: 10px;
     background-color: yellow;
@@ -14,7 +14,7 @@
     flex-direction: column;
 }
 
-.top-container {
+.chat-top-container {
     height: 50px;
     color: white;
     background-color: gray;
@@ -22,7 +22,7 @@
     align-items: center;
 }
 
-.mid-container {
+.chat-mid-container {
     flex: 1;
     background-color: beige;
     color: black;
@@ -30,7 +30,7 @@
     flex-direction: column;
 }
 
-.bottom-container {
+.chat-bottom-container {
     height: 50px;
     color: black;
     background: white;
@@ -38,7 +38,7 @@
     align-items: center;
 }
 
-.btn {
+.chat-btn {
     height: 30px;
     margin-left: 20px;
     background: white;

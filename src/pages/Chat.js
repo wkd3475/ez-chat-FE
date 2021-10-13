@@ -9,16 +9,16 @@ const Chat = () => {
         window.location.replace("/login");
       };
   return (
-    <div className='wrapper'>
-      <div className='body'>
-        <div className='top-container'>
+    <div className='chat-wrapper'>
+      <div className='chat-body'>
+        <div className='chat-top-container'>
           <h2>Name : {getCookie('name')}</h2>
-          <button className='btn' onClick={handleLogout}>Logout</button>
+          <button className='chat-btn' onClick={handleLogout}>Logout</button>
         </div>
-        <div className='mid-container'>
+        <div className='chat-mid-container'>
           <h2>display messages</h2>
         </div>
-        <div className='bottom-container'>
+        <div className='chat-bottom-container'>
           <h2>input message</h2>
         </div>
       </div>
