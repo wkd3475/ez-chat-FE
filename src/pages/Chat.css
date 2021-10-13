@@ -1,3 +1,45 @@
-.Chat {
-    justify-content: center;
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
+    flex: 1;
+    margin: 10px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-container {
+    height: 50px;
+    color: white;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.mid-container {
+    flex: 1;
+    background-color: beige;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-container {
+    height: 50px;
+    color: black;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    height: 30px;
+    margin-left: 20px;
+    background: white;
 }
