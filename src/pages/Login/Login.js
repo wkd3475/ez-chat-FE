@@ -4,7 +4,7 @@ import './Login.css'
 import {setCookie} from '../../utils/cookie'
 
 const Login = () => {
-    const [inputName, setInputName] = useState('')
+    const [inputName, setInputName] = useState('');
 
     const handleInputId = (e) => {
         setInputName(e.target.value);

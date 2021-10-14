@@ -21,8 +21,8 @@ const Chat = () => {
                     <h2>display messages</h2>
                 </div>
                 <div className='chat-bottom-container'>
-                    <input className='chat-input'></input>
-                    <button>Send</button>
+                    <input className='chat-input' value={inputName} onChange={handleInputId}></input>
+                    <button type='text'>Send</button>
                 </div>
             </div>
         </div>
