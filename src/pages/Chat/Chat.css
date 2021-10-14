@@ -43,3 +43,7 @@
     margin-left: 20px;
     background: white;
 }
+
+.chat-input {
+    width: 100%;
+}

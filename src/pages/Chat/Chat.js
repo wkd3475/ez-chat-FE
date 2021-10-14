@@ -19,7 +19,8 @@ const Chat = () => {
           <h2>display messages</h2>
         </div>
         <div className='chat-bottom-container'>
-          <h2>input message</h2>
+          <input className='chat-input'></input>
+          <button>Send</button>
         </div>
       </div>
     </div>
