@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css'
-import { setCookie } from '../utils/cookie'
+import { setCookie } from '../../utils/cookie'
 
 const Login = () => {
   const [inputName, setInputName] = useState('')

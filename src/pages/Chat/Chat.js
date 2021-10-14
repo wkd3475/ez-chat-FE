@@ -1,5 +1,5 @@
 import React from 'react';
-import { removeCookie, getCookie } from '../utils/cookie'
+import { removeCookie, getCookie } from '../../utils/cookie'
 import './Chat.css'
 
 const Chat = () => {
