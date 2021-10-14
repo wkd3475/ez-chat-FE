@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import './Login.css'
+import './index.css'
 import {setCookie} from '../../utils/cookie'
 
 const Login = () => {

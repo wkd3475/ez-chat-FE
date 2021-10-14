@@ -1,9 +1,10 @@
 import React from 'react';
 import {removeCookie, getCookie} from '../../utils/cookie'
-import './Chat.css'
+import './index.css'
 
 const Chat = () => {
     const name = getCookie('name');
+
     const handleLogout = () => {
         removeCookie('name', name);
         window
@@ -21,7 +22,7 @@ const Chat = () => {
                     <h2>display messages</h2>
                 </div>
                 <div className='chat-bottom-container'>
-                    <input className='chat-input' value={inputName} onChange={handleInputId}></input>
+                    <input className='chat-input'></input>
                     <button type='text'>Send</button>
                 </div>
             </div>
